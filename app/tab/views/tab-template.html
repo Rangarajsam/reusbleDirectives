@@ -1,0 +1,10 @@
+<div class="tab-container">
+   <div class="tab-header-holder">
+    <div class="tab-header" ng-repeat="conts in data" ng-class="{'active':activate===$index}" ng-click="activateMe($index)">{{conts.title}}</div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="tab-content-holder">
+        
+        <div class="tab-content" ng-class="{'active':activate===$index}" ng-repeat="conts in data">{{ conts.content}}</div>
+    </div>
+</div>
